@@ -16,6 +16,9 @@
   html {
     box-sizing: border-box;
   }
+  img {
+    max-width: 100%;
+  }
 
   body {
     font-family: "Ubuntu", sans-serif;
@@ -25,4 +28,14 @@
 }
 
 @layer components {
+  .active-btns-cont {
+  }
+  .status-btns-ct {
+    /* background-color: orange; */
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 65%;
+  }
 }
