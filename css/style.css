@@ -25,9 +25,18 @@
     line-height: 1.6;
     font-weight: 400;
   }
+  input::placeholder {
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
 }
 
 @layer components {
+  /* REUSABLE COMPONENTS */
+  .btn {
+    @apply px-3 py-2 bg-Marine-blue font-bold text-xs text-Magnolia rounded-sm;
+  }
   .active-btns-cont {
   }
   .status-btns-ct {
@@ -37,5 +46,13 @@
     left: 50%;
     transform: translate(-50%, -30%);
     width: 65%;
+  }
+
+  .label {
+    @apply font-medium text-xs text-Marine-blue;
+  }
+
+  .input-ct {
+    @apply border-[1px] border-Light-gray py-1 px-4 rounded-md w-full;
   }
 }

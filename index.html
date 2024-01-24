@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
-    <div class="main bg-Alabaster">
+    <div class="main bg-Light-blue">
       <div class="multiform">
         <form action="#">
           <div class="active-btns-cont relative bg-Purplish-blue">
@@ -41,25 +41,40 @@
               <span>4</span>
             </div>
           </div>
-          <div class="tabs-forms w-[90%] mx-auto bg-Strawberry-red">
-            <div class="tab-1">
-              <span class="main-heading">Personal info</span>
-              <p>Please provide your name, email address, and phone number.</p>
-              <div class="item">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="e.g Stephen King" />
+          <div
+            class="tabs-forms w-[90%] mx-auto bg-White -translate-y-16 p-6 rounded-md"
+          >
+            <div class="tab-1 flex gap-4 flex-col">
+              <span class="main-heading text-xl font-bold">Personal info</span>
+              <p class="text-Cool-gray text-sm leading-4 font-medium">
+                Please provide your name, email address, and phone number.
+              </p>
+              <div class="item text-left flex flex-col gap-1">
+                <label for="name" class="label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="e.g Stephen King"
+                  class="input-ct"
+                />
               </div>
               <div class="item">
-                <label for="email">Email Address</label>
+                <label for="email" class="label">Email Address</label>
                 <input
                   type="email"
                   id="email"
                   placeholder="e.g stephenking@lorem.com"
+                  class="input-ct"
                 />
               </div>
               <div class="item">
-                <label for="phone">Phone number</label>
-                <input type="email" id="email" placeholder="+1234567890" />
+                <label for="phone" class="label">Phone number</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="+1234567890"
+                  class="input-ct"
+                />
               </div>
             </div>
             <div class="tab-1"></div>
@@ -67,9 +82,9 @@
             <div class="tab-1"></div>
           </div>
 
-          <div class="btns-cont">
-            <button class="prev">Prev Step</button>
-            <button>Next step</button>
+          <div class="btns-cont bg-White flex justify-center">
+            <button class="btn prev-btn">Prev Step</button>
+            <button class="btn nextt-btn">Next step</button>
           </div>
         </form>
       </div>
