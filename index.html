@@ -44,7 +44,7 @@
           <div
             class="tabs-forms w-[90%] mx-auto bg-White -translate-y-16 p-6 rounded-md"
           >
-            <div class="tab-1 flex gap-4 flex-col">
+            <!-- <div class="tab-1 flex gap-4 flex-col">
               <span class="main-heading text-xl font-bold">Personal info</span>
               <p class="text-Cool-gray text-sm leading-4 font-medium">
                 Please provide your name, email address, and phone number.
@@ -76,13 +76,49 @@
                   class="input-ct"
                 />
               </div>
+            </div> -->
+            <div class="tab-1 flex gap-4 flex-col">
+              <span class="main-heading text-xl font-bold"
+                >Select your plan</span
+              >
+              <p class="text-Cool-gray text-sm leading-4 font-medium">
+                You have the option of monthly or yearly biling.
+              </p>
+              <div class="item text-left flex flex-col gap-1">
+                <label for="name" class="label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="e.g Stephen King"
+                  class="input-ct"
+                />
+              </div>
+              <div class="item">
+                <label for="email" class="label">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="e.g stephenking@lorem.com"
+                  class="input-ct"
+                />
+              </div>
+              <div class="item">
+                <label for="phone" class="label">Phone number</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="+1234567890"
+                  class="input-ct"
+                />
+              </div>
             </div>
-            <div class="tab-1"></div>
             <div class="tab-1"></div>
             <div class="tab-1"></div>
           </div>
 
-          <div class="btns-cont bg-White flex justify-center">
+          <div
+            class="btns-cont bg-White flex justify-between w-[90% mx-auto py-2 px-3"
+          >
             <button class="btn prev-btn">Prev Step</button>
             <button class="btn nextt-btn">Next step</button>
           </div>
