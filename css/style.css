@@ -112,4 +112,36 @@
   .selected-time {
     color: hsl(213, 96%, 18%);
   }
+
+  .year-tplus {
+    display: none;
+    font-size: 0.8rem;
+    color: hsl(213, 96%, 18%);
+    transition: all 0.2s;
+  }
+
+  .addon-item {
+  }
+  .addon-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+  }
+  .addon-input {
+    display: none;
+  }
+  .addon-input:checked + .addon-label {
+    background-color: hsl(217, 100%, 97%);
+    border: 1px solid hsl(243, 100%, 62%);
+  }
+  /* .add-txt {
+    font-size: 1rem;
+    line-height: 1.2;
+  } */
 }

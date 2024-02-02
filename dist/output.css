@@ -735,6 +735,41 @@ input::placeholder {
   color: hsl(213, 96%, 18%);
 }
 
+.year-tplus {
+  display: none;
+  font-size: 0.8rem;
+  color: hsl(213, 96%, 18%);
+  transition: all 0.2s;
+}
+
+.addon-item {
+}
+
+.addon-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+}
+
+.addon-input {
+  display: none;
+}
+
+.addon-input:checked + .addon-label {
+  background-color: hsl(217, 100%, 97%);
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+/* .add-txt {
+    font-size: 1rem;
+    line-height: 1.2;
+  } */
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -974,8 +1009,8 @@ input::placeholder {
   display: none;
 }
 
-.w-\[90\%\]{
-  width: 90%;
+.w-\[95\%\]{
+  width: 95%;
 }
 
 .w-\[this-is\\\\\]{
@@ -2112,8 +2147,8 @@ input::placeholder {
      object-fit: scale-down;
 }
 
-.p-6{
-  padding: 1.5rem;
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-3{
@@ -2285,6 +2320,11 @@ input::placeholder {
 .text-Cool-gray{
   --tw-text-opacity: 1;
   color: hsl(231 11% 63% / var(--tw-text-opacity));
+}
+
+.text-Purplish-blue{
+  --tw-text-opacity: 1;
+  color: hsl(243 100% 62% / var(--tw-text-opacity));
 }
 
 .text-\[\#336699\]\/\[\.35\]{
