@@ -616,6 +616,21 @@ input::placeholder {
 
 /* REUSABLE COMPONENTS */
 
+.btn{
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(213 96% 18% / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(217 100% 97% / var(--tw-text-opacity));
+}
+
 .active-btns-cont {
 }
 
@@ -895,6 +910,18 @@ input::placeholder {
   margin-top: 0.5rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -1016,6 +1043,18 @@ input::placeholder {
 
 .max-w-60{
   max-width: 15rem;
+}
+
+.max-w-\[30rem\]{
+  max-width: 30rem;
+}
+
+.max-w-\[40rem\]{
+  max-width: 40rem;
+}
+
+.max-w-\[80rem\]{
+  max-width: 80rem;
 }
 
 .flex-shrink{
@@ -2136,6 +2175,18 @@ input::placeholder {
   padding: 1.25rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-7{
+  padding: 1.75rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -2215,6 +2266,11 @@ input::placeholder {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2309,6 +2365,11 @@ input::placeholder {
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
+}
+
+.text-Marine-blue{
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
 .underline{
