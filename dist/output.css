@@ -800,6 +800,41 @@ input::placeholder {
   transition: transform 1s;
 }
 
+.\!dot{
+  max-width: 15rem;
+  border-radius: 50%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(228 100% 84% / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.dot{
+  max-width: 15rem;
+  border-radius: 50%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: hsl(228 100% 84% / var(--tw-border-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.dot--active {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -1065,10 +1100,6 @@ input::placeholder {
 
 .w-full{
   width: 100%;
-}
-
-.max-w-60{
-  max-width: 15rem;
 }
 
 .max-w-\[80rem\]{
@@ -2779,36 +2810,4 @@ input::placeholder {
       paint-order: markers;
     }
   }
-}
-
-.\[\&\>span\]\:rounded-\[50\%\]>span{
-  border-radius: 50%;
-}
-
-.\[\&\>span\]\:border>span{
-  border-width: 1px;
-}
-
-.\[\&\>span\]\:border-Pastel-blue>span{
-  --tw-border-opacity: 1;
-  border-color: hsl(228 100% 84% / var(--tw-border-opacity));
-}
-
-.\[\&\>span\]\:px-4>span{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.\[\&\>span\]\:py-2>span{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.\[\&\>span\]\:font-bold>span{
-  font-weight: 700;
-}
-
-.\[\&\>span\]\:text-White>span{
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
