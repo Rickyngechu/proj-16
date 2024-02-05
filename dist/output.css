@@ -614,6 +614,14 @@ input::placeholder {
   }
 }
 
+.multiform {
+  /* height: 100vh; */
+}
+
+.form-ct {
+  /* height: 100vh; */
+}
+
 /* REUSABLE COMPONENTS */
 
 .btn{
@@ -770,6 +778,28 @@ input::placeholder {
     line-height: 1.2;
   } */
 
+.tabs-forms {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  height: 75vh;
+}
+
+.tab {
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* margin: 2rem; */
+  /* height: 50rem; */
+  height: auto;
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -902,24 +932,20 @@ input::placeholder {
   margin-right: auto;
 }
 
-.ml-5{
-  margin-left: 1.25rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .mb-5{
   margin-bottom: 1.25rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
 }
 
 .box-border{
@@ -1043,14 +1069,6 @@ input::placeholder {
 
 .max-w-60{
   max-width: 15rem;
-}
-
-.max-w-\[30rem\]{
-  max-width: 30rem;
-}
-
-.max-w-\[40rem\]{
-  max-width: 40rem;
 }
 
 .max-w-\[80rem\]{
@@ -2175,16 +2193,9 @@ input::placeholder {
   padding: 1.25rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
-.p-10{
-  padding: 2.5rem;
-}
-
-.p-7{
-  padding: 1.75rem;
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-5{
@@ -2266,11 +2277,6 @@ input::placeholder {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold{
@@ -2358,6 +2364,11 @@ input::placeholder {
   color: hsl(231 11% 63% / var(--tw-text-opacity));
 }
 
+.text-Marine-blue{
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity));
+}
+
 .text-Purplish-blue{
   --tw-text-opacity: 1;
   color: hsl(243 100% 62% / var(--tw-text-opacity));
@@ -2365,11 +2376,6 @@ input::placeholder {
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
-}
-
-.text-Marine-blue{
-  --tw-text-opacity: 1;
-  color: hsl(213 96% 18% / var(--tw-text-opacity));
 }
 
 .underline{

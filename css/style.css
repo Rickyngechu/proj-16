@@ -33,6 +33,12 @@
 }
 
 @layer components {
+  .multiform {
+    /* height: 100vh; */
+  }
+  .form-ct {
+    /* height: 100vh; */
+  }
   /* REUSABLE COMPONENTS */
   .btn {
     @apply px-3 py-2 bg-Marine-blue font-bold text-xs text-Magnolia rounded-md;
@@ -144,4 +150,25 @@
     font-size: 1rem;
     line-height: 1.2;
   } */
+  .tabs-forms {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    height: 75vh;
+  }
+  .tab {
+    background-color: #fff;
+    border-radius: 5px;
+    display: block;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin: 2rem; */
+    /* height: 50rem; */
+    height: auto;
+
+    /* THIS creates the animation! */
+    transition: transform 1s;
+  }
 }
