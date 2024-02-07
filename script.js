@@ -9,6 +9,8 @@ const priceTime = document.querySelectorAll(".price-time");
 const priceNum = document.querySelectorAll(".price-num");
 
 const yearPlusTag = document.querySelectorAll(".year-tplus");
+
+const inputFields = document.querySelectorAll(".input-ct");
 // Converting the prices automatically
 const yearMonthPrice = function (price, month = false) {
   let p;
@@ -83,8 +85,10 @@ const slider = function () {
   const prevSlide = function () {
     if (curSlide === 0) {
       curSlide = maxSlide - 1;
+      // btnLeft.style.visibility = "hidden";
     } else {
       curSlide--;
+      // btnLeft.style.visibility = "visible";
     }
     goToSlide(curSlide);
     activateDot(curSlide);
@@ -97,8 +101,32 @@ const slider = function () {
   };
   init();
 
+  const name = document.querySelector(".name");
+  const email = document.querySelector(".email");
+  const phone = document.querySelector(".phone");
+
+  const checkInpts = document.querySelectorAll(".check-input");
   // Event handlers
-  btnRight.addEventListener("click", nextSlide);
+  btnRight.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (name.value === "" || email.value === "" || phone.value === "") {
+      alert("Please fill in the data");
+      return;
+    }
+
+    nextSlide();
+    console.log(name.value, email.value, phone.value);
+    if (curSlide !== 2) return;
+    console.log(
+      checkInpts.forEach((inp, i) => {
+        if (inp.checked) {
+          const checked = [];
+          inp.value === undefined ? console.log("") : console.log(inp.value);
+        }
+      })
+    );
+  });
+
   btnLeft.addEventListener("click", prevSlide);
 
   document.addEventListener("keydown", function (e) {

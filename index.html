@@ -52,8 +52,9 @@
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="e.g Stephen King"
-                  class="input-ct"
+                  class="input-ct name"
                 />
               </div>
               <div class="item">
@@ -61,17 +62,21 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="e.g stephenking@lorem.com"
-                  class="input-ct"
+                  class="input-ct email"
+                  required
                 />
               </div>
               <div class="item">
                 <label for="phone" class="label">Phone number</label>
                 <input
-                  type="email"
-                  id="email"
-                  placeholder="+1234567890"
-                  class="input-ct"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="+254111925680"
+                  class="input-ct phone"
+                  required
                 />
               </div>
             </div>
@@ -88,9 +93,8 @@
                   <input
                     type="checkbox"
                     id="react-option"
-                    value=""
+                    value="Arcade"
                     class="check-input"
-                    required=""
                   />
                   <label for="react-option" class="checks-label">
                     <div class="flex items-center">
@@ -126,7 +130,7 @@
                   <input
                     type="checkbox"
                     id="flowbite-option"
-                    value=""
+                    value="Advanced"
                     class="check-input"
                   />
                   <label for="flowbite-option" class="checks-label">
@@ -163,7 +167,7 @@
                   <input
                     type="checkbox"
                     id="angular-option"
-                    value=""
+                    value="Pro"
                     class="check-input"
                   />
                   <label for="angular-option" class="checks-label">
@@ -224,6 +228,7 @@
                     <input
                       type="checkbox"
                       id="online-service"
+                      value="Online-service"
                       class="addon-input"
                     />
                     <label for="online-service" class="addon-label">
@@ -242,6 +247,7 @@
                     <input
                       type="checkbox"
                       id="larger-storage"
+                      value="larger-storage"
                       class="addon-input"
                     />
                     <label for="larger-storage" class="addon-label">
@@ -261,6 +267,7 @@
                       type="checkbox"
                       id="customize-profile"
                       class="addon-input"
+                      value="Customizable profile"
                     />
                     <label for="customize-profile" class="addon-label">
                       <p>
