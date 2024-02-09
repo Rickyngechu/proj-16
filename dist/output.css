@@ -1106,6 +1106,10 @@ input::placeholder {
   max-width: 80rem;
 }
 
+.max-w-\[100rem\]{
+  max-width: 100rem;
+}
+
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -2793,6 +2797,14 @@ input::placeholder {
 }
 
 @media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:w-full{
+    width: 100%;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
