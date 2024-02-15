@@ -41,7 +41,7 @@
   }
   /* REUSABLE COMPONENTS */
   .btn {
-    @apply px-3 py-2 bg-Marine-blue font-bold text-xs text-Magnolia rounded-md;
+    @apply px-3 py-2 bg-Marine-blue font-bold text-xs text-Magnolia rounded-md sm:text-base;
   }
   .active-btns-cont {
   }
@@ -55,11 +55,11 @@
   }
 
   .label {
-    @apply font-medium text-xs text-Marine-blue;
+    @apply font-medium text-xs text-Marine-blue sm:text-base sm:mb-3 sm:block;
   }
 
   .input-ct {
-    @apply border-[1px] border-Light-gray py-1 px-4 rounded-md w-full;
+    @apply border-[1px] border-Light-gray py-1 px-4 sm:py-2 sm:px-5 rounded-md w-full;
   }
   .check-input {
     display: none;

@@ -27,11 +27,11 @@
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
-    <div class="main bg-Magnolia sm:h-[100vh]">
+    <div class="main bg-Magnolia sm:min-h-[100vh]">
       <div class="multiform sm:py-20">
         <form
           action="#"
-          class="form-ct sm:flex sm:w-[90%] sm:max-w-[90rem] sm:mx-auto rounded-md sm:h-[45rem] sm:p-5 sm:bg-Alabaster"
+          class="form-ct sm:flex sm:w-[90%] sm:max-w-[80rem] sm:mx-auto rounded-md sm:max-h-[50rem] sm:p-5 sm:bg-Alabaster"
         >
           <div
             class="active-btns-cont relative bg-Purplish-blue sm:rounded-md sm:overflow-hidden"
@@ -45,221 +45,227 @@
             </div>
 
             <div class="status-btns-ct flex justify-between sm:flex-col">
-              <div
-                class="it sm:flex sm:justify-between sm:items-center sm:px-5 bg-Strawberry-red sm:mb-5"
-              >
-                <span class="dot dot--active" data-slide="0">1</span>
-                <span> <b>STEP 1</b> <br />Your info</span>
+              <div class="it sm:flex sm:items-center sm:mb-5">
+                <span class="dot dot--active sm:mr-5" data-slide="0">1</span>
+                <p class="max-sm:hidden block">
+                  <span class="text-Light-gray font-normal">STEP 1</span> <br />
+                  <span class="font-bold text-White">YOUR INFO</span>
+                </p>
               </div>
-              <div
-                class="it sm:flex sm:justify-between sm:items-center sm:px-5 bg-Strawberry-red"
-              >
-                <span class="dot" data-slide="1">2</span>
-                <span>
-                  <b>STEP 2</b> <br />
-                  Select plan</span
-                >
+              <div class="it sm:flex sm:items-center sm:mb-5">
+                <span class="dot sm:mr-5" data-slide="1">2</span>
+                <p class="max-sm:hidden block">
+                  <span class="text-Light-gray font-normal">STEP 2</span> <br />
+                  <span class="font-bold text-White"> SELECT PLAN</span>
+                </p>
               </div>
-              <div
-                class="it sm:flex sm:justify-between sm:items-center sm:px-5 bg-Strawberry-red"
-              >
-                <span class="dot" data-slide="2">3</span>
-                <span>
-                  <b>STEP 3</b> <br />
-                  Adds on</span
-                >
+              <div class="it sm:flex sm:items-center sm:mb-5">
+                <span class="dot sm:mr-5" data-slide="2">3</span>
+                <p class="max-sm:hidden block">
+                  <span class="text-Light-gray font-normal">STEP 3</span> <br />
+                  <span class="font-bold text-White"> ADDS ON</span>
+                </p>
               </div>
-              <div
-                class="it sm:flex sm:justify-between sm:items-center sm:px-5 bg-Strawberry-red"
-              >
-                <span class="dot" data-slide="3">4</span>
-                <span>
-                  <b>STEP 1</b> <br />
-                  summary</span
-                >
+              <div class="it sm:flex sm:items-center sm:mb-5">
+                <span class="dot sm:mr-5" data-slide="3">4</span>
+                <p class="max-sm:hidden block">
+                  <span class="text-Light-gray font-normal">STEP 4</span> <br />
+                  <span class="font-bold text-White"> SUMMARY</span>
+                </p>
               </div>
             </div>
           </div>
-          <div class="sm:w-full">
+          <div class="sm:w-full sm:ml-20">
             <div
-              class="tabs-forms slider w-[95%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md max-w-[100rem] sm:w-full"
+              class="sm:flex sm:flex-row sm:justify-between sm:h-[90%] sm:py-10"
             >
-              <div class="tab slide tab-1 flex gap-4 flex-col">
-                <span class="main-heading text-xl font-bold"
-                  >Personal info</span
-                >
-                <p class="text-Cool-gray text-sm leading-4 font-medium">
-                  Please provide your name, email address, and phone number.
-                </p>
-                <div class="item text-left flex flex-col gap-1">
-                  <label for="name" class="label">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="e.g Stephen King"
-                    class="input-ct name"
-                  />
-                </div>
-                <div class="item">
-                  <label for="email" class="label">Email Address</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="e.g stephenking@lorem.com"
-                    class="input-ct email"
-                    required
-                  />
-                </div>
-                <div class="item">
-                  <label for="phone" class="label">Phone number</label>
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="+254111925680"
-                    class="input-ct phone"
-                    required
-                  />
-                </div>
-              </div>
-              <!-- <div class="tab slide tab-2 flex gap-4 flex-col">
-                <span class="main-heading text-xl font-bold"
-                  >Select your plan</span
-                >
-                <p class="text-Cool-gray text-sm leading-4 font-medium">
-                  You have the option of monthly or yearly biling.
-                </p>
-
-                <ul class="grid w-full gap-6 md:grid-cols-3">
-                  <li>
-                    <input
-                      type="checkbox"
-                      id="react-option"
-                      value="Arcade"
-                      class="check-input"
-                    />
-                    <label for="react-option" class="checks-label">
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="40"
-                          height="40"
-                          viewBox="0 0 40 40"
-                        >
-                          <g fill="none" fill-rule="evenodd">
-                            <circle cx="20" cy="20" r="20" fill="#FFAF7E" />
-                            <path
-                              fill="#FFF"
-                              fill-rule="nonzero"
-                              d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"
-                            />
-                          </g>
-                        </svg>
-                        <div class="ml-5">
-                          <h3 class="check-btn-header">Arcade</h3>
-                          <p class="check-pricet">
-                            <span class="price-num">$9</span>/<span
-                              class="price-time"
-                              >mo</span
-                            >
-                          </p>
-                          <span class="year-tplus">2 months free</span>
-                        </div>
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      type="checkbox"
-                      id="flowbite-option"
-                      value="Advanced"
-                      class="check-input"
-                    />
-                    <label for="flowbite-option" class="checks-label">
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="40"
-                          height="40"
-                          viewBox="0 0 40 40"
-                        >
-                          <g fill="none" fill-rule="evenodd">
-                            <circle cx="20" cy="20" r="20" fill="#F9818E" />
-                            <path
-                              fill="#FFF"
-                              fill-rule="nonzero"
-                              d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"
-                            />
-                          </g>
-                        </svg>
-                        <div class="ml-5">
-                          <h3 class="check-btn-header">Advanced</h3>
-                          <p class="check-pricet">
-                            <span class="price-num">$12</span>/<span
-                              class="price-time"
-                              >mo</span
-                            >
-                          </p>
-                          <span class="year-tplus">2 months free</span>
-                        </div>
-                      </div>
-                    </label>
-                  </li>
-                  <li>
-                    <input
-                      type="checkbox"
-                      id="angular-option"
-                      value="Pro"
-                      class="check-input"
-                    />
-                    <label for="angular-option" class="checks-label">
-                      <div class="flex items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="40"
-                          height="40"
-                          viewBox="0 0 40 40"
-                        >
-                          <g fill="none" fill-rule="evenodd">
-                            <circle cx="20" cy="20" r="20" fill="#483EFF" />
-                            <path
-                              fill="#FFF"
-                              fill-rule="nonzero"
-                              d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"
-                            />
-                          </g>
-                        </svg>
-                        <div class="ml-5">
-                          <h3 class="check-btn-header">Pro</h3>
-                          <p class="check-pricet">
-                            <span class="price-num">$15</span>/<span
-                              class="price-time"
-                              >mo</span
-                            >
-                          </p>
-                          <span class="year-tplus">2 months free</span>
-                        </div>
-                      </div>
-                    </label>
-                  </li>
-
-                  <li
-                    class="w-full bg-Magnolia py-2 px-5 flex justify-between items-center rounded-md"
+              <div
+                class="tabs-forms slider w-[95%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md max-w-[100rem] sm:w-full"
+              >
+                <div class="tab slide tab-1 flex gap-4 sm:gap-8 flex-col">
+                  <span class="main-heading text-xl font-bold sm:text-4xl"
+                    >Personal info</span
                   >
-                    <span class="month font-bold text-lg selected-time"
-                      >Monthly</span
-                    >
-                    <div>
-                      <input type="checkbox" id="toggle" class="toggle-inpt" />
+                  <p
+                    class="text-Cool-gray text-sm leading-4 font-medium sm:text-lg"
+                  >
+                    Please provide your name, email address, and phone number.
+                  </p>
+                  <div class="item text-left flex flex-col gap-1">
+                    <label for="name" class="label">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="e.g Stephen King"
+                      class="input-ct name"
+                    />
+                  </div>
+                  <div class="item">
+                    <label for="email" class="label">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="e.g stephenking@lorem.com"
+                      class="input-ct email"
+                      required
+                    />
+                  </div>
+                  <div class="item">
+                    <label for="phone" class="label">Phone number</label>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="+254111925680"
+                      class="input-ct phone"
+                      required
+                    />
+                  </div>
+                </div>
 
-                      <label for="toggle" class="toggle-bg-item"></label>
-                    </div>
-                    <span class="year font-bold text-lg">Yearly</span>
-                  </li>
-                </ul>
-              </div>
+                <!-- <div class="tab slide tab-2 flex gap-4 flex-col">
+                  <span class="main-heading text-xl font-bold"
+                    >Select your plan</span
+                  >
+                  <p class="text-Cool-gray text-sm leading-4 font-medium">
+                    You have the option of monthly or yearly biling.
+                  </p>
+
+                  <ul class="grid w-full gap-6 md:grid-cols-3">
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="react-option"
+                        value="Arcade"
+                        class="check-input"
+                      />
+                      <label for="react-option" class="checks-label">
+                        <div class="flex items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                          >
+                            <g fill="none" fill-rule="evenodd">
+                              <circle cx="20" cy="20" r="20" fill="#FFAF7E" />
+                              <path
+                                fill="#FFF"
+                                fill-rule="nonzero"
+                                d="M24.995 18.005h-3.998v5.998h-2v-5.998H15a1 1 0 0 0-1 1V29a1 1 0 0 0 1 1h9.995a1 1 0 0 0 1-1v-9.995a1 1 0 0 0-1-1Zm-5.997 8.996h-2v-1.999h2v2Zm2-11.175a2.999 2.999 0 1 0-2 0v2.18h2v-2.18Z"
+                              />
+                            </g>
+                          </svg>
+                          <div class="ml-5">
+                            <h3 class="check-btn-header">Arcade</h3>
+                            <p class="check-pricet">
+                              <span class="price-num">$9</span>/<span
+                                class="price-time"
+                                >mo</span
+                              >
+                            </p>
+                            <span class="year-tplus">2 months free</span>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="flowbite-option"
+                        value="Advanced"
+                        class="check-input"
+                      />
+                      <label for="flowbite-option" class="checks-label">
+                        <div class="flex items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                          >
+                            <g fill="none" fill-rule="evenodd">
+                              <circle cx="20" cy="20" r="20" fill="#F9818E" />
+                              <path
+                                fill="#FFF"
+                                fill-rule="nonzero"
+                                d="M25.057 15H14.944C12.212 15 10 17.03 10 19.885c0 2.857 2.212 4.936 4.944 4.936h10.113c2.733 0 4.943-2.08 4.943-4.936S27.79 15 25.057 15ZM17.5 20.388c0 .12-.108.237-.234.237h-1.552v1.569c0 .126-.138.217-.259.217H14.5c-.118 0-.213-.086-.213-.203v-1.583h-1.569c-.126 0-.217-.139-.217-.26v-.956c0-.117.086-.213.202-.213h1.584v-1.554c0-.125.082-.231.203-.231h.989c.12 0 .236.108.236.234v1.551h1.555c.125 0 .231.083.231.204v.988Zm5.347.393a.862.862 0 0 1-.869-.855c0-.472.39-.856.869-.856.481 0 .87.384.87.856 0 .471-.389.855-.87.855Zm1.9 1.866a.86.86 0 0 1-.87-.852.86.86 0 0 1 .87-.855c.48 0 .87.38.87.855a.86.86 0 0 1-.87.852Zm0-3.736a.862.862 0 0 1-.87-.854c0-.472.39-.856.87-.856s.87.384.87.856a.862.862 0 0 1-.87.854Zm1.899 1.87a.862.862 0 0 1-.868-.855c0-.472.389-.856.868-.856s.868.384.868.856a.862.862 0 0 1-.868.855Z"
+                              />
+                            </g>
+                          </svg>
+                          <div class="ml-5">
+                            <h3 class="check-btn-header">Advanced</h3>
+                            <p class="check-pricet">
+                              <span class="price-num">$12</span>/<span
+                                class="price-time"
+                                >mo</span
+                              >
+                            </p>
+                            <span class="year-tplus">2 months free</span>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+                    <li>
+                      <input
+                        type="checkbox"
+                        id="angular-option"
+                        value="Pro"
+                        class="check-input"
+                      />
+                      <label for="angular-option" class="checks-label">
+                        <div class="flex items-center">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="40"
+                            height="40"
+                            viewBox="0 0 40 40"
+                          >
+                            <g fill="none" fill-rule="evenodd">
+                              <circle cx="20" cy="20" r="20" fill="#483EFF" />
+                              <path
+                                fill="#FFF"
+                                fill-rule="nonzero"
+                                d="M26.666 13H13.334A3.333 3.333 0 0 0 10 16.333v7.193a3.447 3.447 0 0 0 2.14 3.24c1.238.5 2.656.182 3.56-.8L18.52 23h2.96l2.82 2.966a3.2 3.2 0 0 0 3.56.8 3.447 3.447 0 0 0 2.14-3.24v-7.193A3.333 3.333 0 0 0 26.666 13Zm-9.333 6H16v1.333a.667.667 0 0 1-1.333 0V19h-1.333a.667.667 0 0 1 0-1.334h1.333v-1.333a.667.667 0 1 1 1.333 0v1.333h1.333a.667.667 0 1 1 0 1.334Zm7.333 2a2.667 2.667 0 1 1 0-5.333 2.667 2.667 0 0 1 0 5.333ZM26 18.333a1.333 1.333 0 1 1-2.667 0 1.333 1.333 0 0 1 2.667 0Z"
+                              />
+                            </g>
+                          </svg>
+                          <div class="ml-5">
+                            <h3 class="check-btn-header">Pro</h3>
+                            <p class="check-pricet">
+                              <span class="price-num">$15</span>/<span
+                                class="price-time"
+                                >mo</span
+                              >
+                            </p>
+                            <span class="year-tplus">2 months free</span>
+                          </div>
+                        </div>
+                      </label>
+                    </li>
+
+                    <li
+                      class="w-full bg-Magnolia py-2 px-5 flex justify-between items-center rounded-md"
+                    >
+                      <span class="month font-bold text-lg selected-time"
+                        >Monthly</span
+                      >
+                      <div>
+                        <input
+                          type="checkbox"
+                          id="toggle"
+                          class="toggle-inpt"
+                        />
+
+                        <label for="toggle" class="toggle-bg-item"></label>
+                      </div>
+                      <span class="year font-bold text-lg">Yearly</span>
+                    </li>
+                  </ul>
+                </div> -->
+                <!--
               <div class="tab slide tab-3">
                 <div class="tab-1 flex gap-4 flex-col">
                   <span class="main-heading text-xl font-bold"
@@ -406,8 +412,9 @@
                   </p>
                 </div>
               </div> -->
+              </div>
             </div>
-            <div class="btns flex justify-between bg-White py-2 px-3">
+            <div class="btns flex justify-between max-sm:g-White py-2 px-3">
               <button class="btn-next slider__btn--left">Go back</button>
               <button class="btn btn-prev slider__btn--right">Next step</button>
             </div>
