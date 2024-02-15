@@ -150,7 +150,7 @@
     font-size: 1rem;
     line-height: 1.2;
   } */
-  .tabs-forms {
+  /* .tabs-forms {
     overflow: hidden;
     position: relative;
     display: block;
@@ -165,12 +165,12 @@
     top: 0;
     left: 0;
     /* margin: 2rem; */
-    /* height: 50rem; */
-    height: auto;
+  /* height: 50rem; */
+  height: auto;
 
-    /* THIS creates the animation! */
+  /* THIS creates the animation! 
     transition: transform 1s;
-  }
+  }*/
   .dot {
     @apply px-4 py-2 rounded-[50%] border border-Pastel-blue max-w-60 font-bold text-White;
   }
