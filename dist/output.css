@@ -2835,8 +2835,8 @@ height: auto;
     margin-right: auto;
   }
 
-  .sm\:mb-6{
-    margin-bottom: 1.5rem;
+  .sm\:mb-5{
+    margin-bottom: 1.25rem;
   }
 
   .sm\:ml-20{
@@ -2847,16 +2847,8 @@ height: auto;
     margin-right: 1.25rem;
   }
 
-  .sm\:mb-5{
-    margin-bottom: 1.25rem;
-  }
-
   .sm\:flex{
     display: flex;
-  }
-
-  .sm\:h-\[100vh\]{
-    height: 100vh;
   }
 
   .sm\:h-\[45rem\]{
@@ -2871,12 +2863,8 @@ height: auto;
     height: 100%;
   }
 
-  .sm\:max-h-\[45rem\]{
-    max-height: 45rem;
-  }
-
-  .sm\:max-h-\[50rem\]{
-    max-height: 50rem;
+  .sm\:max-h-\[80rem\]{
+    max-height: 80rem;
   }
 
   .sm\:min-h-\[100vh\]{
@@ -2941,6 +2929,11 @@ height: auto;
     padding: 1.25rem;
   }
 
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .sm\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -2949,6 +2942,11 @@ height: auto;
   .sm\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .sm\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .sm\:text-4xl{
