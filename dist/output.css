@@ -862,6 +862,23 @@ height: auto;
   color: hsl(213, 96%, 18%);
 }
 
+.tabs-forms {
+  position: relative;
+  display: grid;
+  /* background-color: orange; */
+  overflow: hidden;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: green; */
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -989,6 +1006,10 @@ height: auto;
   clear: none;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1109,8 +1130,28 @@ height: auto;
   display: none;
 }
 
-.w-\[95\%\]{
-  width: 95%;
+.h-\[35rem\]{
+  height: 35rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-\[30rem\]{
+  height: 30rem;
+}
+
+.h-\[40rem\]{
+  height: 40rem;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.w-\[90\%\]{
+  width: 90%;
 }
 
 .w-\[this-is\\\\\]{
@@ -1127,10 +1168,6 @@ height: auto;
 
 .w-full{
   width: 100%;
-}
-
-.max-w-\[100rem\]{
-  max-width: 100rem;
 }
 
 .flex-shrink{
@@ -2942,11 +2979,6 @@ height: auto;
   .sm\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-  .sm\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .sm\:text-4xl{

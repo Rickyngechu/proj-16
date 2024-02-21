@@ -80,9 +80,11 @@
               class="sm:flex sm:flex-row sm:justify-between sm:h-[90%] sm:py-10 sm:px-3"
             >
               <div
-                class="tabs-forms slider w-[95%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md max-w-[100rem] sm:w-full"
+                class="tabs-forms relative slider w-[90%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md sm:w-full h-auto m-5"
               >
-                <!-- <div class="tab slide tab-1 flex gap-4 sm:gap-8 flex-col">
+                <div
+                  class="tab slide tab-1 flex gap-4 sm:gap-8 flex-col h-full"
+                >
                   <span class="main-heading text-xl font-bold sm:text-4xl"
                     >Personal info</span
                   >
@@ -123,9 +125,9 @@
                       required
                     />
                   </div>
-                </div> -->
+                </div>
 
-                <!-- <div class="tab slide tab-2 flex gap-4 flex-col">
+                <div class="tab slide tab-2 flex gap-4 flex-col">
                   <span class="main-heading text-xl font-bold sm:text-4xl"
                     >Select your plan</span
                   >
@@ -266,8 +268,8 @@
                       <span class="year font-bold text-lg">Yearly</span>
                     </li>
                   </ul>
-                </div> -->
-                <!--
+                </div>
+
                 <div class="tab slide tab-3">
                   <div class="tab-1 flex gap-4 flex-col">
                     <span class="main-heading text-xl font-bold sm:text-4xl"
@@ -343,7 +345,7 @@
                     </ul>
                   </div>
                 </div>
-             
+
                 <div class="tab slide tab-4">
                   <div class="tab-1 flex gap-4 flex-col">
                     <span class="main-heading text-xl font-bold"
@@ -397,10 +399,10 @@
                       </li>
                     </ul>
                   </div>
-                </div>-->
+                </div>
 
-                <div class="final-tab slide tab">
-                  <div class="final p-5 text-center">
+                <div class="tab final-tab slide tab sm:py-20">
+                  <div class="final p-5 text-center d">
                     <img
                       src="assets/images/icon-thank-you.svg"
                       alt="thankyou"
@@ -410,7 +412,7 @@
                     <h4 class="text-Marine-blue font-bold text-xl mb-4">
                       Thank you!
                     </h4>
-                    <p class="text-Cool-gray text-sm">
+                    <p class="text-Cool-gray text-sm sm:text-lg">
                       Thanks for confirming your subscription! We hope you have
                       fun using our platform.If your ever need support, please
                       feel free to email us at surpport@loremgaming.com.

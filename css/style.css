@@ -178,4 +178,20 @@
     background-color: hsl(206, 94%, 87%);
     color: hsl(213, 96%, 18%);
   }
+  .tabs-forms {
+    position: relative;
+    display: grid;
+    /* background-color: orange; */
+    overflow: hidden;
+  }
+  .tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: green; */
+    background-color: #fff;
+
+    transition: all 0.4s ease;
+  }
 }

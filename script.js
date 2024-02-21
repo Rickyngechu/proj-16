@@ -109,10 +109,10 @@ const slider = function () {
   // Event handlers
   btnRight.addEventListener("click", function (e) {
     e.preventDefault();
-    if (name.value === "" || email.value === "" || phone.value === "") {
-      alert("Please fill in the data");
-      return;
-    }
+    // if (name.value === "" || email.value === "" || phone.value === "") {
+    //   alert("Please fill in the data");
+    //   return;
+    // }
 
     nextSlide();
     console.log(name.value, email.value, phone.value);
