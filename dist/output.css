@@ -874,6 +874,7 @@ height: auto;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 1rem;
   /* background-color: green; */
   background-color: #fff;
   transition: all 0.4s ease;
@@ -1006,10 +1007,6 @@ height: auto;
   clear: none;
 }
 
-.m-5{
-  margin: 1.25rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1130,24 +1127,12 @@ height: auto;
   display: none;
 }
 
-.h-\[35rem\]{
-  height: 35rem;
-}
-
-.h-full{
-  height: 100%;
-}
-
-.h-\[30rem\]{
-  height: 30rem;
-}
-
 .h-\[40rem\]{
   height: 40rem;
 }
 
-.h-auto{
-  height: auto;
+.h-full{
+  height: 100%;
 }
 
 .w-\[90\%\]{
@@ -1168,6 +1153,18 @@ height: auto;
 
 .w-full{
   width: 100%;
+}
+
+.max-w-\[40rem\]{
+  max-width: 40rem;
+}
+
+.max-w-\[25rem\]{
+  max-width: 25rem;
+}
+
+.max-w-\[23rem\]{
+  max-width: 23rem;
 }
 
 .flex-shrink{
@@ -2864,6 +2861,10 @@ height: auto;
   .max-sm\:hidden{
     display: none;
   }
+
+  .max-sm\:h-\[40rem\]{
+    height: 40rem;
+  }
 }
 
 @media (min-width: 640px){
@@ -2898,6 +2899,10 @@ height: auto;
 
   .sm\:h-full{
     height: 100%;
+  }
+
+  .sm\:h-\[50rem\]{
+    height: 50rem;
   }
 
   .sm\:max-h-\[80rem\]{
@@ -2999,6 +3004,12 @@ height: auto;
 @media (min-width: 768px){
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:min-w-\[50rem\]{
+    min-width: 50rem;
   }
 }
 

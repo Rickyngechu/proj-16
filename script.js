@@ -11,6 +11,8 @@ const priceNum = document.querySelectorAll(".price-num");
 const yearPlusTag = document.querySelectorAll(".year-tplus");
 
 const inputFields = document.querySelectorAll(".input-ct");
+
+// tab.forEach(tb => console.log(tb.dataset.slide));
 // Converting the prices automatically
 const yearMonthPrice = function (price, month = false) {
   let p;
@@ -48,7 +50,7 @@ const slider = function () {
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");
   const dots = document.querySelectorAll(".dot");
-
+  const tabForms = document.querySelectorAll(".tabs-forms");
   let curSlide = 0;
   const maxSlide = slides.length;
 
@@ -109,11 +111,10 @@ const slider = function () {
   // Event handlers
   btnRight.addEventListener("click", function (e) {
     e.preventDefault();
-    // if (name.value === "" || email.value === "" || phone.value === "") {
-    //   alert("Please fill in the data");
-    //   return;
-    // }
-
+    if (name.value === "" || email.value === "" || phone.value === "") {
+      alert("Please fill in the data");
+      return;
+    }
     nextSlide();
     console.log(name.value, email.value, phone.value);
     if (curSlide !== 2) return;

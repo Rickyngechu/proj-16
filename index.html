@@ -31,7 +31,7 @@
       <div class="multiform sm:py-20">
         <form
           action="#"
-          class="form-ct sm:flex sm:w-[90%] sm:max-w-[80rem] sm:mx-auto rounded-md sm:h-[45rem] sm:max-h-[80rem] sm:p-5 sm:bg-Alabaster"
+          class="form-ct sm:flex sm:w-[90%] sm:max-w-[80rem] sm:mx-auto rounded-md sm:h-[50rem] sm:max-h-[80rem] sm:p-5 sm:bg-Alabaster"
         >
           <div
             class="active-btns-cont relative bg-Purplish-blue sm:rounded-md sm:overflow-hidden"
@@ -40,7 +40,7 @@
               <img
                 src="assets/images/bg-sidebar-mobile.svg"
                 alt="sidebar"
-                class=""
+                class="w-full"
               />
             </div>
 
@@ -80,10 +80,11 @@
               class="sm:flex sm:flex-row sm:justify-between sm:h-[90%] sm:py-10 sm:px-3"
             >
               <div
-                class="tabs-forms relative slider w-[90%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md sm:w-full h-auto m-5"
+                class="tabs-forms relative slider w-[90%] mx-auto -translate-y-16 sm:-translate-y-0 p-5 rounded-md sm:w-full max-sm:h-[40rem]"
               >
                 <div
                   class="tab slide tab-1 flex gap-4 sm:gap-8 flex-col h-full"
+                  data-slide="1"
                 >
                   <span class="main-heading text-xl font-bold sm:text-4xl"
                     >Personal info</span
@@ -127,7 +128,7 @@
                   </div>
                 </div>
 
-                <div class="tab slide tab-2 flex gap-4 flex-col">
+                <div class="tab slide tab-2 flex gap-4 flex-col" data-slide="2">
                   <span class="main-heading text-xl font-bold sm:text-4xl"
                     >Select your plan</span
                   >
@@ -270,7 +271,7 @@
                   </ul>
                 </div>
 
-                <div class="tab slide tab-3">
+                <div class="tab slide tab-3" data-slide="3">
                   <div class="tab-1 flex gap-4 flex-col">
                     <span class="main-heading text-xl font-bold sm:text-4xl"
                       >Pick add-ons</span
@@ -346,7 +347,7 @@
                   </div>
                 </div>
 
-                <div class="tab slide tab-4">
+                <div class="tab slide tab-4" data-slide="4">
                   <div class="tab-1 flex gap-4 flex-col">
                     <span class="main-heading text-xl font-bold"
                       >Finishing up</span
@@ -401,7 +402,7 @@
                   </div>
                 </div>
 
-                <div class="tab final-tab slide tab sm:py-20">
+                <div class="tab final-tab slide tab sm:py-20" data-slide="5">
                   <div class="final p-5 text-center d">
                     <img
                       src="assets/images/icon-thank-you.svg"
@@ -429,12 +430,12 @@
         </form>
       </div>
     </div>
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="#">Erick ngechu</a>.
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
