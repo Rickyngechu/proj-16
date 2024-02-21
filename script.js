@@ -50,7 +50,8 @@ const slider = function () {
   const btnRight = document.querySelector(".slider__btn--right");
   const dotContainer = document.querySelector(".dots");
   const dots = document.querySelectorAll(".dot");
-  const tabForms = document.querySelectorAll(".tabs-forms");
+  const tab = document.querySelectorAll(".tab");
+
   let curSlide = 0;
   const maxSlide = slides.length;
 
